@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ## 📌 Project Overview
-Proyek ini bertujuan untuk melakukan Analisis Sentimen pada ulasan aplikasi **[NAMA APLIKASI, misal: Gojek/Tokopedia]** dari Google Play Store. Proyek ini dibangun menggunakan **Deep Learning** dengan arsitektur **LSTM (Long Short-Term Memory)** dan **GRU (Gated Recurrent Unit)**.
+Proyek ini bertujuan untuk melakukan Analisis Sentimen pada ulasan aplikasi dari Google Play Store. Proyek ini dibangun menggunakan **Deep Learning** dengan arsitektur **LSTM (Long Short-Term Memory)** dan **GRU (Gated Recurrent Unit)**.
 
 Model dilatih untuk mengklasifikasikan ulasan ke dalam 3 kelas sentimen:
 1.  **Positif**
@@ -19,7 +19,6 @@ Proyek ini merupakan bagian dari submission akhir dengan kriteria "Nilai Tinggi"
 Data diperoleh melalui proses **Web Scraping** mandiri menggunakan library `google-play-scraper`.
 * **Sumber:** Google Play Store
 * **Total Data Mentah:** 12.000+ ulasan
-* **Total Data Bersih:** [MASUKKAN JUMLAH FINAL, misal: 10.500] sampel
 * **Pembagian Data:** 80% Training, 20% Validation
 * **Fitur:** Teks ulasan (*content*)
 * **Target:** Skor Sentimen (Dikonversi dari Rating Bintang 1-5)
@@ -46,15 +45,6 @@ Untuk mendapatkan performa terbaik, dilakukan 3 percobaan skema pelatihan menggu
 | **Model 3** | **Bi-LSTM** | Adam | Embedding + Bidirectional LSTM + Dense Output |
 
 > **Catatan:** Semua model menggunakan teknik **Callback** untuk menghentikan pelatihan secara otomatis jika akurasi training dan validasi mencapai >92%.
-
-## 📊 Results
-Berikut adalah hasil evaluasi dari model terbaik (**[MASUKKAN NAMA MODEL TERBAIK, misal: Bidirectional LSTM]**):
-
-* **Training Accuracy:** [MASUKKAN ANGKA, misal: 95.20%]
-* **Validation Accuracy:** [MASUKKAN ANGKA, misal: 93.50%]
-* **Loss:** [MASUKKAN ANGKA LOSS TERAKHIR]
-
-*(Anda bisa menambahkan screenshot grafik akurasi/loss di sini jika ada)*
 
 ## 🚀 How to Run
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di mesin lokal atau Google Colab:
